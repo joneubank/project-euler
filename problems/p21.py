@@ -20,6 +20,7 @@ output:
 
 Amicables: set([1184, 6368, 220, 5020, 2924, 6232, 1210, 5564, 284, 2620])
 Answer: 31626
+[Finished in 0.2s]
 ----------------------------------------------------------------------
 message:
 You are the 91119th person to have solved this problem.
@@ -37,8 +38,8 @@ def get_factors(num):
         out.add(2)
         out.add(num/2)
 
-    testMax = int(math.sqrt(num)) + 1
-    for i in range(3, testMax, interval):
+    test_max = int(math.sqrt(num)) + 1
+    for i in range(3, test_max, interval):
         if num % i == 0:
             out.add(i)
             out.add(num/i)
