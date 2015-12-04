@@ -32,7 +32,7 @@ def arrayProduct(array):
 
 
 '''
-fibSequence(a, b, cutoff, maxsteps = 1000)
+fibonnaci(a, b, cutoff, maxsteps = 1000)
 return: array with all values in fibonnacci like sequence up to the cutoff value
 input:
        a        - first number used in sequence
@@ -43,11 +43,11 @@ input:
                   negative values indicate unlimited steps - Default is 1000
 
 
-example: fibSequence(1, 1, 20) = [1, 1, 2, 3, 5, 8, 13]
+example: fibonnaci(1, 1, 20) = [1, 1, 2, 3, 5, 8, 13]
 note: infinite loops are possible if negatives are used without care
 first use: p2
 '''
-def fibSequence(a, b, cutoff, maxsteps=1000):
+def fibonnaci(a, b, cutoff, maxsteps=1000):
     output = []
 
     # the output should always have the first two numbers, even if above the
