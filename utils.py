@@ -115,12 +115,12 @@ def triangleNumber(num):
 
 
 '''
-getFactors(num)
+get_factors(num)
 return: set (not array) with all factors of the input num
 
 First Used: p12
 '''
-def getFactors(num):
+def get_factors(num):
     out = set([1, num])
 
     interval = 2
@@ -129,8 +129,8 @@ def getFactors(num):
         out.add(2)
         out.add(num/2)
 
-    testMax = int(math.sqrt(num)) + 1
-    for i in range(3 , testMax, interval):
+    test_max = int(math.sqrt(num)) + 1
+    for i in range(3, test_max, interval):
         if num % i == 0:
             out.add(i)
             out.add(num/i)
