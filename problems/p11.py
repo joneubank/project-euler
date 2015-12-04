@@ -35,10 +35,11 @@ notes:
             to calculate element addresses
 ----------------------------------------------------------------------
 output:
-Highest Block: 96059601
+Highest Block: 70600674
 [Finished in 0.1s]
 ----------------------------------------------------------------------
 message:
+You are the 145229th person to have solved this problem.
 
 '''
 
@@ -93,7 +94,7 @@ def getRow(data, length, row, column):
 def getColumn(data, length, row, column):
     out = []
     for i in range(0, length, 1):
-        out.append(data[row+1][column])
+        out.append(data[row+i][column])
 
     return out
 
@@ -130,7 +131,7 @@ if __name__ == '__main__':
             if prod > blockMax:
                 blockMax = prod
 
-    for row in range(3, 20, 1):
+    for row in range(2, 20, 1):
         for col in range(0, 17, 1):
             block = getDiagonalLeft(data, 4, row, col)
             prod = arrayProduct(block)
