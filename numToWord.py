@@ -1,7 +1,7 @@
 '''
 Not going to do input checking. use wisely.
 
-Only works for integers (positive for now but feasibly negative)
+Only works for integers
 call numToWord(num) to get lowercase only text version
 '''
 
