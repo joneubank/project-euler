@@ -238,6 +238,17 @@ def commonPrimeFactors(factorArrays):
 
     return commonFactors
 
+
+'''
+Convert letters to numbers based on alphabet position
+'''
+def string_to_number(string):
+    return sum([letter_as_number(x) for x in string])
+
+
+def letter_as_number(letter):
+    return ord(letter.lower())-96
+
 if __name__ == '__main__':
     out = primes(5, 15)
 
