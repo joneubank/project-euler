@@ -58,12 +58,18 @@ You are the 214013th person to have solved this problem.
 
 if __name__ == '__main__':
     out = []
-    for a in range(1,333,1):
+    for a in range(1, 333, 1):
         b = (1000000 - 2000*a) / (2000 - 2.0*a)
         if (b % 1.0 == 0):
             b = int(b)
             c = 1000 - a - b
-            print("Solution Found: (" + str(a) + ", " + str(b) + ", " + str(c) + ")")
+
+            print("Solution Found: (" +
+                  str(a) + ", " +
+                  str(b) + ", " +
+                  str(c) + ")"
+                  )
+
             out = [a, b, c]
             break
         else:

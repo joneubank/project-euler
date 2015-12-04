@@ -19,14 +19,13 @@ so what is being calculated is sum of n*n*(n-1)
 
 You are the 289439th person to have solved this problem.
 
-Answer: 25164150
+Total: 25164150
+[Finished in 0.1s]
 '''
 
 if __name__ == '__main__':
     out = 0
-    for x in range(1,101,1):
+    for x in range(1, 101, 1):
         print(x)
         out += x*x*(x-1)
     print("Total: " + str(out))
-
-

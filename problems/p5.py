@@ -1,7 +1,9 @@
 '''
-2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+2520 is the smallest number that can be divided by each of the numbers from
+1 to 10 without any remainder.
 
-What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+What is the smallest positive number that is evenly divisible by all of the
+numbers from 1 to 20?
 
 -----------------------------------------------------------
 Note: lowest common multiple is the product of the set of prime factors for the
@@ -14,8 +16,11 @@ Note: lowest common multiple is the product of the set of prime factors for the
 
 You are the 287523rd person to have solved this problem.
 
-Answer: 232792560
+Common Prime Factors: [2, 3, 2, 5, 7, 2, 3, 11, 13, 2, 17, 19]
+Lowest Common Multiple: 232792560
+[Finished in 0.1s]
 '''
+
 
 # primeFactors from utils
 def primeFactors(num):
@@ -30,6 +35,7 @@ def primeFactors(num):
             low = low + 1
 
     return primeFactors
+
 
 def commonPrimeFactors(factorArrays):
     # dict to keep record from each set, will build full set from this
@@ -58,7 +64,7 @@ if __name__ == '__main__':
     commonFactors = commonPrimeFactors(factorArrays)
     print("Common Prime Factors: " + str(commonFactors))
 
-    product = 1;
+    product = 1
     for x in commonFactors:
         product *= x
 

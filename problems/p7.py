@@ -11,10 +11,11 @@ note: This implementation is purely brute force. only optimization is skipping
 -----------------------------------------------------------
 You are the 248017th person to have solved this problem.
 
-run time: 31.3s
-Answer: 104743
+Found Prime #10001: 104743
+[Finished in 36.5s]
 '''
 import math
+
 
 # from utils:
 def isPrime(num):
@@ -35,4 +36,3 @@ if __name__ == '__main__':
         if isPrime(test):
             out.append(test)
             print("Found Prime #" + str(len(out)) + ": " + str(test))
-

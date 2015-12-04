@@ -19,6 +19,8 @@ message:
 
 You are the 139717th person to have solved this problem.
 '''
+
+
 def getFileLines(filename):
 
     with open(filename) as f:

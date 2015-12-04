@@ -8,7 +8,9 @@ n -> 3n + 1 (n is odd)
 Using the rule above and starting with 13, we generate the following sequence:
 
 13 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
-It can be seen that this sequence (starting at 13 and finishing at 1) contains 10 terms. Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1.
+It can be seen that this sequence (starting at 13 and finishing at 1) contains
+    10 terms. Although it has not been proved yet (Collatz Problem), it is
+    thought that all starting numbers finish at 1.
 
 Which starting number, under one million, produces the longest chain?
 
@@ -27,6 +29,8 @@ Answer: 837799
 message:
 You are the 137971st person to have solved this problem.
 '''
+
+
 def collatzSequence(num):
     current = num
     out = [current]
@@ -49,7 +53,9 @@ if __name__ == '__main__':
         if seqLength > top:
             top = seqLength
             topStart = i
-            print(str(i) + ": " + str(seqLength) )
+            print(str(i) + ": " + str(seqLength))
 
-    print("Longest Start was " + str(topStart) + " with " + str(top) + " steps")
-    print("Answer: " + str(topStart) )
+    print("Longest Start was " + str(topStart) +
+          " with " + str(top) + " steps")
+
+    print("Answer: " + str(topStart))

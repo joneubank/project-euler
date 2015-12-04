@@ -10,8 +10,11 @@ You have earned 1 new award:
 
 Baby Steps: Solve three problems
 
-Answer: 6857
+Added Factor: 6857
+[71, 839, 1471, 6857]
+[Finished in 0.1s]
 '''
+
 
 def primeFactors(num):
     primeFactors = []

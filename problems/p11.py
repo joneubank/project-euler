@@ -41,6 +41,8 @@ Highest Block: 96059601
 message:
 
 '''
+
+
 def getFileLines(filename):
 
     with open(filename) as f:
@@ -58,40 +60,40 @@ def arrayProduct(array):
 
 def getDiagonalRight(data, length, row, column):
     out = []
-    for i in range(0,length,1):
-        out.append( data[row+i][column+i] )
+    for i in range(0, length, 1):
+        out.append(data[row+i][column+i])
 
     return out
 
 
 def getDiagonalLeft(data, length, row, column):
     out = []
-    for i in range(0,length,1):
-        out.append( data[row-i][column+i] )
+    for i in range(0, length, 1):
+        out.append(data[row-i][column+i])
 
     return out
 
 
 def getDiagonalRight(data, length, row, column):
     out = []
-    for i in range(0,length,1):
-        out.append( data[row+i][column+i] )
+    for i in range(0, length, 1):
+        out.append(data[row+i][column+i])
 
     return out
 
 
 def getRow(data, length, row, column):
     out = []
-    for i in range(0,length,1):
-        out.append( data[row][column+i] )
+    for i in range(0, length, 1):
+        out.append(data[row][column+i])
 
     return out
 
 
 def getColumn(data, length, row, column):
     out = []
-    for i in range(0,length,1):
-        out.append( data[row+1][column] )
+    for i in range(0, length, 1):
+        out.append(data[row+1][column])
 
     return out
 
@@ -120,7 +122,7 @@ if __name__ == '__main__':
             if prod > blockMax:
                 blockMax = prod
 
-    #diag right
+    # diag right
     for row in range(0, 17, 1):
         for col in range(0, 17, 1):
             block = getDiagonalRight(data, 4, row, col)
@@ -135,7 +137,4 @@ if __name__ == '__main__':
             if prod > blockMax:
                 blockMax = prod
 
-
     print("Highest Block: " + str(blockMax))
-
-    # print(getDiagonalLeft(data, 4, 1, 5))

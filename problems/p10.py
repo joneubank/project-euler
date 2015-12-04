@@ -56,6 +56,6 @@ def primes(start, end):
 
 
 if __name__ == '__main__':
-    primeList = primes(0,2000000)
+    primeList = primes(0, 2000000)
     print("Found " + str(len(primeList)) + " primes.")
-    print("Answer: " + str(sum(primeList)) )
+    print("Answer: " + str(sum(primeList)))

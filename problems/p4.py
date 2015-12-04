@@ -8,7 +8,12 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 You are the 275660th person to have solved this problem.
 
-Answer: 906609
+Found Combinations: ['993x913=906609', '968x916=886688', '962x924=888888',
+    '932x924=861168', '924x962=888888', '924x932=861168', '916x968=886688',
+    '914x902=824428', '913x993=906609', '909x902=819918', '902x914=824428',
+    '902x909=819918']
+Max: 906609
+[Finished in 0.1s]
 '''
 import math
 

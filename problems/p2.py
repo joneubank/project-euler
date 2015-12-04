@@ -11,7 +11,8 @@ four million, find the sum of the even-valued terms.
 
 You are the 422386th person to have solved this problem.
 
-Answer:4613732
+Complete - total = 4613732
+[Finished in 0.1s]
 '''
 
 total = 0
